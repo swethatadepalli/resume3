@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale:1.0">
+  <link rel="icon" href="images/dariyabi.jpg">
+<style>
+
+.flex{
+    display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+.flex>div{
+    width:90%;
+    text-align:left;
+    justify-content:center;
+
+}
+h3{
+  width:100%;
+  background:#000;
+  box-shadow:3px 3px 3px #ddd;
+  padding:0.3%;
+  color:#fff;
+}
+    .col-1{width: 100%;}
+    .col-2{width:30%; text-align:center;box-shadow:2px 2px 2px #ddd;}
+    .col-3{width:70%;box-shadow:3px 3px 3px #ddd;}
+
+
+    [class*='col-']{
+      float:left;
+    }
+
+    @media only screen and (max-width:768px){
+      [class*="col-"]{
+        width:100%;
+      }
+    }
+
+@media only screen and(max-width:320px){
+  [class*="col-"]{
+        width:100%;
+        ol{
+          font-size:60px;
+        }
+
+}
+@media only screen and(max-width:480px){
+  [class*="col-"]{
+        width:100%;
+        ol{
+          font-size:60px;
+        }
+}
+  .p{
+        width:50%;
+        text-align:left;
+        box-shadow:3px 3px 3px #ddd;
+        font-size:18px;
+
+    }
+.table,th,td{
+    border:1px solid;
+    text-align:left;
+    width:20%;
+}
+.ol{
+    text-align:left;
+}
+.img{
+    text-align:right;
+    width:50%;
+}
+.ed{
+    text-align:left;
+}
+</style>
+</head>
+<body>
+ <center> <h1>RESUME</h1></center>
+<div class="col-2">
+  <div class="flex">
+<img src="images/dariyabi1.jpg" alt="swetha">
+<div><h1><center>SK.Dariyabi</center></h1></div>
+</div>
+</div>
+<div class="col-3">
+  <div class="flex"><div>
+<h3>CAREER OBJECTIVES:</h3>
+   <p style="text-align:left"> To establish myself in the field of fast growing TECHNICAL and CORPORATE world, to gain valuable additions in my career and to enhance my technical and managerial skills at most to contribute in the growth of the company and mine is well.
+</p>
+<div class="ed">
+<h3>QUALIFICATIONS:</h3>
+    <div id="ed">
+        <script>
+       var education={
+"degree" : ["M.Tech(C.S.E)","B-Tech(C.S.E)","Inter","SSC"],
+"NameofColl" : ["GVPCOE","GVPCEW", "GOVT PLOYTECHNIC","ZPH HIGH SCHOOL"],
+"location" : ["Vizag, Andhra Pradesh","Vizag, Andhra Pradesh","Vizag, Andhra Pradesh","Vizag, Andhra Pradesh"]
+}
+            for(i in education.degree){
+    document.getElementById('ed').innerHTML+="<b>"+education.degree[i]+"</b><br>";
+    document.getElementById('ed').innerHTML+=education.NameofColl[i]+"<br>";
+    document.getElementById('ed').innerHTML+=education.location[i]+"<br><br>";  
+            }
+        </script>
+    </div></div>
+<h3>
+MY ACHIEVEMENTS AND CO-CURRICULAR ACTIVITIES:</h3>
+    <ol class="ol">
+o   Participated in various awareness camps and debate competitions.</br>
+
+o   Acted as an organizer for Fest that was held in my college.</br>
+
+o   Participated in workshop conducted by National Small Industries Corporation Limited.</br>
+
+o   I am NCC cadet
+
+</ol></p>
+<h3>STRENGTHS:</h3>
+<ol class="ol">
+•   Good grasping power.</br>
+•   Eagerness to learn and try new things.</br>
+•   Ability to adjust myself in any situation.</br>
+</ol></p>
+<h3>AREA OF INTERESTS:</h3>
+    <ol class="ol">
+
+•   Internet of Things(IOT).</br>
+•   Big Data.</br>
+</ol></p>
+<h3>SOFTWARE/HARDWARE PROFICIENCY:</h3>
+    <ol class="ol">
+
+Languages           :   C, C++,JAVA.</br>
+Operating Systems   :   WINDOWS XP, LINUX</br>
+Web Technologies    :   HTML.</br>
+
+</ol>
+
+    
+        <h3>ACADEMIC PROJECTS:</h3>
+        <ol class="ol">
+
+1.  M.Tech 
+              Project Title :       Detection of provenance forgerry packet drop attacks in wireles sensor networks.</br>
+
+2.  B.Tech
+               Project Title:       E-notes.
+</ol>
+    <h3>INTERNSHIP:</h3>
+
+            <p style="text-align:left">1.Internship in Andhra Pradesh State Skill Development Corporation for 6 months(APSSDC).</p>
+<h3>PERSONAL PROFILE:</h3>
+    <ol class="ol">
+
+          Date of Birth            :    11th october 1994</br>
+          Gender                   :    Female</br>
+          Father’s Name            :    SK.Hussain.</br>
+          Nationality              :    Indian</br>
+          Languages known          :    Telugu and English</br>
+          Hobbies                  :    Listening to music, Cooking. </br>
+          Address                  :    Visakhapatnam
+                                        Pin-530026.
+</ol>
+   <h3>DECLARATION:</h3>
+    
+    <p style="text-align:left">I,hereby declare that all the information provided me regarding my educational qualification and personal information is true to the best of my knowledge and I bear all the responsibilities of any possible discrepancies.</p>
+
+</p>
+<p style="text-align:left">Date:17/01/2018</p>
+<p style="text-align:left">Place:Tirupathi</p>
+<p style="text-align:right">SK.Dariyabi</p>
+</div>
+</div>
+</body>
+</html> 
