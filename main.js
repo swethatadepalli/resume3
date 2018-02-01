@@ -27,6 +27,9 @@
     for(i in data.basics.interest){
         creatingInterest(data.basics.interest[i]);
     }
+    for(i in data.basics.declaration){
+        creatingDeclaration(data.basics.declaration[i]);
+    }
    });
 
   var resumeDiv = document.getElementById("resume");
@@ -77,6 +80,18 @@
     summary_section.appendChild(div);
     section.appendChild(summary_section);
     interestDiv.appendChild(section);
+  }
+  var declarationDiv = document.getElementById("declaration");
+
+  function creatingDeclaration(declaration){
+    var section = document.createElement("section");
+    section.classList.add("section", "main-summary");
+    var summary_section = document.createElement("section")
+    var div = document.createElement("div");
+    div.innerHTML = declaration;
+    summary_section.appendChild(div);
+    section.appendChild(summary_section);
+    declarationDiv.appendChild(section);
   }
 
 
